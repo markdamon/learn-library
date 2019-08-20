@@ -28,7 +28,7 @@
 
   启动完成，但在apollo admin管理页面添加项目以后出现配置错误。
 
-  检查端口8090是否被占用（可以检查一下ap0llo admin的启动状态：http://localhost:8070/system_info.html ），mac/linux查看端口占用命令：lost -i tcp:8090，找到进程id并kill -9 id杀掉。
+  检查端口8090是否被占用（可以检查一下apollo admin的启动状态：http://localhost:8070/system_info.html ），mac/linux查看端口占用命令：lost -i tcp:8090，找到进程id并kill -9 id杀掉。
 
 - 将项目配置文件录入到apollo中。配置地址：[config](https://github.com/spring2go/piggymetrics/tree/master/config)
 
@@ -74,7 +74,7 @@ security:
 
 - 不需要重启prometheus服务即可动态加载配置
 
-  启动prometheus时需要添加参数，完成启动：./prometheus --web.enable-lifecycle
+  启动prometheus时需要添加参数，完整启动方式：./prometheus --web.enable-lifecycle
 
   修改完prometheus.yml完以后get访问：http://localhost:9090/-/reload
 
@@ -84,7 +84,7 @@ security:
 
 - 挑选已有spring boot的dashboard
 
-  访问地址：https://grafana.com/grafana/dashboards ，DataSource选择prometheus，category选择web servers，search within this list填入：spring boot。在右侧选择下次次数比较多的：*Spring Boot Statistics*，然后Copy ID to Clipboard：6756
+  官方提供免费dashboard地址：https://grafana.com/grafana/dashboards ，DataSource选择prometheus，category选择web servers，search within this list填入：spring boot。在右侧选择下次次数比较多的：*Spring Boot Statistics*，然后Copy ID to Clipboard：6756
 
 - 导入dashboard=6756
 
