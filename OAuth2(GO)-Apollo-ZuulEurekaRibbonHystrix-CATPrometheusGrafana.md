@@ -28,7 +28,7 @@
 
   启动完成，但在apollo admin管理页面添加项目以后出现配置错误。
 
-  检查端口8090是否被占用（可以检查一下ap0llo admin的启动状态：http://localhost:8070/system_info.html），mac/linux查看端口占用命令：lost -i tcp:8090，找到进程id并kill -9 id杀掉。
+  检查端口8090是否被占用（可以检查一下ap0llo admin的启动状态：http://localhost:8070/system_info.html ），mac/linux查看端口占用命令：lost -i tcp:8090，找到进程id并kill -9 id杀掉。
 
 - 将项目配置文件录入到apollo中。配置地址：[config](https://github.com/spring2go/piggymetrics/tree/master/config)
 
