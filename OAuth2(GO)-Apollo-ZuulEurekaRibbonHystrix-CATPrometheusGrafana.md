@@ -2,7 +2,7 @@
 
 ## 一、概念模型
 
-项目地址：[PiggyMetrics](https://github.com/sqshq/PiggyMetrics)
+项目地址：[PiggyMetrics](https://github.com/spring2go/piggymetrics)
 
 ## 二、环境搭建及注意事项
 
