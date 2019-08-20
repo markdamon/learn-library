@@ -76,7 +76,7 @@ security:
 
   启动prometheus时需要添加参数，完整启动方式：./prometheus --web.enable-lifecycle
 
-  修改完prometheus.yml完以后get访问：http://localhost:9090/-/reload
+  修改完prometheus.yml以后get访问：http://localhost:9090/-/reload
 
 ### 6. 监控数据展示Grafana
 
@@ -105,7 +105,7 @@ MeterRegistryCustomizer<MeterRegistry> metricsCommonTags(@Value("${app.id}") Str
 
   进入dashboard=6756面板-设置，在Variables中，
 
-  修改application为（spring.application.name）：label_values(application)，
+  修改application（spring.application.name/app.id）为：label_values(application)，
 
   修改instance（一般为IP:PORT）为：label_values(jvm_memory_used_bytes{application="$application"}, instance)
 
