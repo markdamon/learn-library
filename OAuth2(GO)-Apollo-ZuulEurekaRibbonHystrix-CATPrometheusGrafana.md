@@ -84,7 +84,7 @@ security:
 
 - 挑选已有spring boot的dashboard
 
-  访问地址：https://grafana.com/grafana/dashboards，DataSource选择prometheus，category选择web servers，search within this list填入：spring boot。在右侧选择下次次数比较多的：*Spring Boot Statistics*，然后Copy ID to Clipboard：6756
+  访问地址：https://grafana.com/grafana/dashboards ，DataSource选择prometheus，category选择web servers，search within this list填入：spring boot。在右侧选择下次次数比较多的：*Spring Boot Statistics*，然后Copy ID to Clipboard：6756
 
 - 导入dashboard=6756
 
